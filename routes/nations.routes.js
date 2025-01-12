@@ -10,5 +10,7 @@ nationRouter.get('/:code', nationsController.getNations);
 
 nationRouter.post('/flag', nationsController.getNationFlag);
 
+nationRouter.get('/please/getoff', nationsController.getBodyChange);
+
 module.exports = nationRouter;
 

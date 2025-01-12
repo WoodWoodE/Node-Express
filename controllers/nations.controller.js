@@ -33,9 +33,16 @@ function getNationFlag(req, res) {
     res.sendFile(path.join(__dirname, '..', 'public', 'images', 'Korea.jpg'));
 }
 
+function getBodyChange(req, res) {
+    res.render('nations', {
+        who: "left side girl"
+    })
+}
+
 module.exports = {
     postAddNations,
     getTotalNations,
     getNations,
-    getNationFlag
+    getNationFlag,
+    getBodyChange
 }
